@@ -41,7 +41,7 @@ public class TcpClient1 extends JFrame {
 	Socket client; /*winbo*/
 	String nickname="김재훈";
 	
-	//Ű�̺�Ʈ
+	
 	
 	
 	
