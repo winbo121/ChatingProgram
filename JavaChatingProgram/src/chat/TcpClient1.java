@@ -38,7 +38,7 @@ public class TcpClient1 extends JFrame {
 	
 	Font F=new Font("굴림체",Font.BOLD,20);
 	
-	Socket client;
+	Socket client; /*winbo*/
 	String nickname="김재훈";
 	
 	//Ű�̺�Ʈ
