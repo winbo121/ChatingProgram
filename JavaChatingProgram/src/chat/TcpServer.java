@@ -47,9 +47,7 @@ public class TcpServer extends JFrame {
 	
 	public TcpServer() throws Exception {
 	
-		super("타이틀");
-		
-		
+		super("타이틀");/*타이들로 쓰기*/
 		
 		init_display(); //Center
 		
