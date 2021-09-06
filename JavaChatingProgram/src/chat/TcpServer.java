@@ -231,7 +231,7 @@ class ReadThread extends Thread{
 							e.printStackTrace();
 						}
 						
-						//������鿡�� ������ �޼��� ����
+
 						try {
 							my_send_message_all(data+"\n");
 						} catch (Exception e) {
@@ -312,14 +312,14 @@ class ReadThread extends Thread{
 			String user_list=sb.toString();
 			
 			
-			//���� ������ ��� Ŭ���̾�Ʈ���� ������
+
 			my_send_message_all(user_list);
 			
 			
 		}
 
 		private void my_send_message_all(String message) throws Exception {
-			//for(ReadThread rt: socketList) { //���ϸ���Ʈ�ȿ� �ִ� ���  ����� ���� ������ ������
+			
 				
 				for(int i=0; i<socketList.size(); i++) {
 					

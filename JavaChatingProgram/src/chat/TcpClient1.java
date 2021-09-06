@@ -39,7 +39,7 @@ public class TcpClient1 extends JFrame {
 	Font F=new Font("굴림체",Font.BOLD,20);
 	
 	Socket client; /*winbo*/
-	String nickname="김재훈";
+	String nickname="김재훈2";
 	
 	
 	
@@ -193,7 +193,7 @@ public class TcpClient1 extends JFrame {
 		String message=jtf_message.getText().trim();
 		
 	
-		//���۵����� ����
+
 		String send_data=String.format("MSG#%s#%s\n", nickname,message);
 		
 		client.getOutputStream().write(send_data.getBytes());
@@ -209,7 +209,7 @@ public class TcpClient1 extends JFrame {
 		InputStreamReader isr=new InputStreamReader(client.getInputStream());
 		BufferedReader br=new BufferedReader(isr);
 		
-		//���� ������
+
 		new Thread() {
 			@Override
 			public void run() {
@@ -270,7 +270,7 @@ public class TcpClient1 extends JFrame {
 	protected void my_display_user_list(String readStr) {
 		
 		readStr=readStr.replaceAll("LIST#", "");
-		//ȫ�浿#ȫ�ǵ�2#
+
 		jlist_user_list.setListData(readStr.split("#"));
 	}
 
